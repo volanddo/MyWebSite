@@ -9,8 +9,14 @@
     margin: 10px;
     padding: 20px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid gainsboro;
     border-radius: 10px;
+    transition: 0.4s;
+}
+
+.article:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.4s;
 }
 .article img{
     width: 50%;
@@ -24,7 +30,7 @@
     display: flex;
     min-height: 100px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .article .title ul{
     display: flex;

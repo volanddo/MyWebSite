@@ -14,13 +14,16 @@ function animateMenu(){
         li.onclick = function(){
             cv =  document.querySelector("#MyCV");
             project =  document.querySelector("#MyProject");
+            titleH1 =  document.querySelector("header div .titleh1");
             if (li.id == "CvButton"){
                 cv.style.display = "block";
                 project.style.display = "none";
+                titleH1.innerHTML = "Mon CV"
             }
             else{
                 cv.style.display = "none";
                 project.style.display = "block";
+                titleH1.innerHTML = "Mes Projets"
             }
         }
     });
