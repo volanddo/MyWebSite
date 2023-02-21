@@ -1,0 +1,75 @@
+/* article
+ *  -> h2
+ *  -> p
+ *  -> img
+*/
+
+.article
+{
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+.article img{
+    width: 50%;
+    
+}
+.article li{
+    list-style-type: none;
+}
+
+.article .title {
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+.article .title ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.article .title li, .article .competence ul li
+{
+    background-color: rgba(153, 255, 51, 0.4);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.article .presentation{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.article .competence{
+    margin-top: 20px;
+}
+.article .competence ul li{
+    background-color: rgba(24,99,255, 1);
+    color: white;
+}
+.article .competence ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.article .image img{
+    width: 400px;
+    margin: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+.article .image{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.article .externButton a{
+    color:rgba(24,99,255, 1);
+}
