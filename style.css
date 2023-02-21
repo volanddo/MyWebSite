@@ -86,7 +86,7 @@ section h1{
 }
 /* ----------   Section    ----------*/
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 900px){
     section{
         width: 80%;
         margin:auto;
