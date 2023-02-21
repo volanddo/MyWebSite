@@ -29,6 +29,29 @@ function animateMenu(){
     });
 }
 
+function changeLanguage(){
+    englishButton = document.querySelector("header #lang");
+    menuToggle.onclick = function(){
+        menuToggle.classList.toggle("fr");
+        if (menuToggle.classList.includes("fr")){
+            document.querySelector(".fr").forEach((block) => {
+                block.style.display = "block";
+            });;
+            document.querySelector(".en").forEach((block) => {
+                block.style.display = "none";
+            });;
+        }
+        else{
+            document.querySelector(".fr").forEach((block) => {
+                block.style.display = "none";
+            });;
+            document.querySelector(".en").forEach((block) => {
+                block.style.display = "block";
+            });;
+        }
+    }
+}
+
 
 
 window.addEventListener('load', function() {

@@ -28,7 +28,6 @@
 
 .article .title {
     display: flex;
-    min-height: 100px;
     align-items: center;
     justify-content: space-between;
 }
@@ -78,4 +77,9 @@
 
 .article .externButton a{
     color:rgba(24,99,255, 1);
+}
+
+.largeSpace {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
