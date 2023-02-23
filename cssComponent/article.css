@@ -28,6 +28,7 @@
 
 .article .title {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
@@ -37,7 +38,8 @@
 }
 .article .title li, .article .competence ul li
 {
-    background-color: rgba(153, 255, 51, 0.4);
+    background-color: rgb(251, 37, 118);
+    color: rgb(254, 254, 254);
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
@@ -65,6 +67,7 @@
 }
 .article .image img{
     width: 400px;
+    max-width: 100%;
     margin: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
@@ -82,4 +85,9 @@
 .largeSpace {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+@media screen and (min-width: 800px){
+    .article .title {
+        flex-direction:row;
+    }
 }

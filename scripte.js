@@ -6,11 +6,10 @@ function animateMenu(){
     menuToggle.onclick = function(){
         menuToggle.classList.toggle("active");
         menuContent.classList.toggle("active");
-    }
+    };
     let liclickable = document.querySelectorAll("header ul li");
     
     liclickable.forEach((li) => {
-        console.log(li);
         li.onclick = function(){
             cv =  document.querySelector("#MyCV");
             project =  document.querySelector("#MyProject");
@@ -31,23 +30,36 @@ function animateMenu(){
 
 function changeLanguage(){
     englishButton = document.querySelector("header #lang");
-    menuToggle.onclick = function(){
-        menuToggle.classList.toggle("fr");
-        if (menuToggle.classList.includes("fr")){
-            document.querySelector(".fr").forEach((block) => {
-                block.style.display = "block";
-            });;
-            document.querySelector(".en").forEach((block) => {
+
+    //Preload
+    document.querySelectorAll(".en").forEach((block) => {
+        block.style.display = "none";
+    });
+    document.querySelectorAll(".fr").forEach((block) => {
+        block.style.display = "";
+    });
+    englishButton.src="images/anglais.webp"
+
+    // add event
+    englishButton.onclick = function(){
+        englishButton.classList.toggle("en");
+        if (englishButton.classList.contains("en")){
+            document.querySelectorAll(".en").forEach((block) => {
+                block.style.display = "";
+            });
+            document.querySelectorAll(".fr").forEach((block) => {
                 block.style.display = "none";
-            });;
+            });
+            englishButton.src="images/francais.webp"
         }
         else{
-            document.querySelector(".fr").forEach((block) => {
+            document.querySelectorAll(".en").forEach((block) => {
                 block.style.display = "none";
-            });;
-            document.querySelector(".en").forEach((block) => {
-                block.style.display = "block";
-            });;
+            });
+            document.querySelectorAll(".fr").forEach((block) => {
+                block.style.display = "";
+            });
+            englishButton.src="images/anglais.webp"
         }
     }
 }
@@ -56,4 +68,5 @@ function changeLanguage(){
 
 window.addEventListener('load', function() {
     animateMenu();
+    changeLanguage();
 });
