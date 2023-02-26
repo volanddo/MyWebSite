@@ -2,6 +2,9 @@ const pathLocal = "http://localhost:8080/";
 const pathGlobal = "https://volanddo.github.io/";
 var currentPath = pathGlobal;
 
+let isProject = true;
+let isFrench = true;
+
 function animateMenu(){
     let menuToggle = document.querySelector("header .toggle");
     let menuContent = document.querySelector("header ul");
@@ -15,16 +18,25 @@ function animateMenu(){
         li.onclick = function(){
             cv =  document.querySelector("#MyCV");
             project =  document.querySelector("#MyProject");
-            titleH1 =  document.querySelector("header div .titleh1");
-            if (li.id == "CvButton"){
+            if (li.id === "CvButton"){
+                isProject = false;
                 cv.style.display = "block";
                 project.style.display = "none";
-                titleH1.innerHTML = "Mon CV"
+                if (isFrench){
+                    titleSection.innerHTML = "Mon CV"
+                }else{
+                    titleSection.innerHTML = "My CV"
+                }
             }
             else{
+                isProject = true;
                 cv.style.display = "none";
                 project.style.display = "block";
-                titleH1.innerHTML = "Mes Projets"
+                if (isFrench){
+                    titleSection.innerHTML = "Mes Projets"
+                }else{
+                    titleSection.innerHTML = "My projects"
+                }
             }
         }
     });
@@ -33,35 +45,42 @@ function animateMenu(){
 function changeLanguage(){
     englishButton = document.querySelector("header #lang");
 
-    //Preload
-    document.querySelectorAll(".en").forEach((block) => {
-        block.style.display = "none";
-    });
-    document.querySelectorAll(".fr").forEach((block) => {
-        block.style.display = "";
-    });
-    englishButton.src="images/anglais.webp"
-
     // add event
     englishButton.onclick = function(){
-        englishButton.classList.toggle("en");
-        if (englishButton.classList.contains("en")){
-            document.querySelectorAll(".en").forEach((block) => {
-                block.style.display = "";
-            });
-            document.querySelectorAll(".fr").forEach((block) => {
-                block.style.display = "none";
-            });
-            englishButton.src="images/francais.webp"
+        // remove previous content:
+        let cv = document.getElementById("MyCV")
+        while (cv.firstChild) {
+            cv.removeChild(cv.firstChild);
+            }
+        let projet = document.getElementById("MyProject")
+        while (projet.firstChild) {
+            projet.removeChild(projet.firstChild);
+        }
+        // make a new content
+        isFrench = !isFrench;
+        if (!isFrench){
+            if(isProject){
+                document.getElementById("titleSection").innerHTML = "My projects";
+            }
+            else{
+                document.getElementById("titleSection").innerHTML = "My CV";
+            }
+            document.getElementById("CvButton").innerHTML="My CV"
+            document.getElementById("PjButton").innerHTML="My Projects"
+            readJson('project-fr.json', projet, 'project-en');
+            readJson('cv-en.json', cv, 'cv-en');
         }
         else{
-            document.querySelectorAll(".en").forEach((block) => {
-                block.style.display = "none";
-            });
-            document.querySelectorAll(".fr").forEach((block) => {
-                block.style.display = "";
-            });
-            englishButton.src="images/anglais.webp"
+            if(isProject){
+                document.getElementById("titleSection").innerHTML = "Mes Projets";
+            }
+            else{
+                document.getElementById("titleSection").innerHTML = "Mon CV";
+            }
+            document.getElementById("CvButton").innerHTML="Mon CV"
+            document.getElementById("PjButton").innerHTML="Mes Projets"
+            readJson('project-fr.json', projet, 'project-fr');
+            readJson('cv-fr.json', cv, 'cv-fr');
         }
     }
 }
@@ -145,7 +164,7 @@ class Article{
 }
 
 function readJson(filePath, baliseToAdd, startName){
-    fetch(currentPath+filePath)
+    fetch(currentPath+"jsonFile/"+filePath)
   .then(response => response.json())
   .then(data => {
     data[startName].forEach(objet =>{
@@ -159,6 +178,7 @@ function readJson(filePath, baliseToAdd, startName){
 
 window.addEventListener('load', function() {
     animateMenu();
-    readJson('project.json', document.getElementById("MyProject"), 'project-fr');
+    changeLanguage();
+    readJson('project-fr.json', document.getElementById("MyProject"), 'project-fr');
     readJson('cv-fr.json', document.getElementById("MyCV"), 'cv-fr');
 });
