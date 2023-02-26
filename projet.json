@@ -1,0 +1,218 @@
+{
+    "cv-fr":
+   [
+    {
+        "title": {
+            "h2":"Compilateur en Java",
+            "ul":[
+                "java",
+                "junit",
+                "antlr",
+                "maven",
+                "AGILE"
+            ]
+        },
+        "presentation":[
+            "Projet scolaire dont l'objectif est de coder un compilateur pour un language objet proche du java. Le projet se fait en groupe de cinq sur une période d'un mois. J'ai pu me familiariser avec des concepts assembleurs comme la gestion de la pile, du tas, et de leurs pointeurs.",
+            "Dans ce projet j'étais scrum master et développeur. Mon rôle était de coordonner l'équipe et de planifier les tâches selon la méthodologie AGILE. Pour la partie code, je me suis occupé de la génération du code assembleur et de ses optimisations. Les optimisations nous ont permis d'avoir le compilateur le 5e plus efficace parmi les trente groupes.",
+            "La compilation et l'ajout de librairies externes se font avec MAVEN. Les tests sont automatisés avec Junit",
+            "Le code suivant génère le fichier assembleur suivant"
+        ],
+        "externButton":{
+            "link": "",
+            "text": "Fichier source non disponible (accord avec l'ENSIMAG)"
+        },
+        "image":[
+            "images/project/code.png",
+            "images/project/codeAsm.png"
+        ],
+        "competence":{
+            "title":"Compétences acquises :",
+            "ul":[
+                "Gestion de projet, SCRUM",
+                "Approfondissement JAVA",
+                "Fonctionnement compilateur",
+                "ANTLR",
+                "MAVEN",
+                "Assembleur"
+            ]
+        }
+    },
+    {
+        "title": {
+            "h2":"RPG 2D: Ethynd",
+            "ul":[
+                "Python",
+                "Pygame"
+            ]
+        },
+        "presentation":[
+            "J'ai réalisé ce projet au lycée avec trois amis en deux mois. Consiste en un RPG 2d dans le monde d'Ethynde. Le joueur peut se déplacer, changer de zone, tuer des ennemis et prendre des dégâts.",
+            "Tout le jeu est codé avec pygame en python. Je me suis occupé de l'affiche de la carte, de l'animation ainsi que des interactions du personnage avec des ennemis."
+        ],
+        "externButton":{
+            "link": "https://github.com/ProjetIsn2019/Ethynd",
+            "text": " Voir les fichiers sources"
+        },
+        "image":[
+            "images/project/ethynd.gif"
+        ],
+        "competence":{
+            "title":"Compétences acquises :",
+            "ul":[
+                "Python",
+                "Programmation Object",
+                "Programmation evenementielle"
+            ]
+        }
+    },
+    {
+        "title": {
+            "h2":"Librairie graphique",
+            "ul":[
+                "C"
+            ]
+        },
+        "presentation":[
+            "Librairie codée entièrement en C. Elle permet de créer des programmes en utilisant un affichage graphique. Son fonctionnement est similaire à celui de Tkinter en python. Elle a été réalisée en un mois avec un groupe de trois élèves.",
+            "Pour fonctionner, la librairie permet de créer des objets comme des widgets, des frames, des toplevels et d'autre objets. Puis de les positionner à l'aide de gestionnaires de géométrie (gridder, placer)."
+        ],
+        "externButton":{
+            "link": "https://github.com/volanddo/GUI-ensimag-",
+            "text": "Retrouver le code source sur Github"
+        },
+        "image":[
+            "images/project/minesweeper.gif",
+            "images/project/widgets.gif"
+        ],
+        "competence":{
+            "title":"Compétences acquises :",
+            "ul":[
+                "Apprentissage programmation évènementielle.",
+                "Connaissance approfondie du fonctionnement d'une Librairie graphique",
+                "Héritage en C",
+                "Travaille d'équipe",
+                "cmake et makefile"
+            ]
+        }
+    },
+    {
+        "title": {
+            "h2":"Simulateur incendie",
+            "ul":[
+                "java"
+            ]
+        },
+        "presentation":[
+            "Projet scolaire dont l'objectif est d'apprendre et de se familiariser avec les objets de Java (queue, stack, linkedlist....).Le projet a été réalisé par groupe de trois.",
+            "L'objectif de ce projet était de créer un simulateur d'incendie, où des robots devaient éteindre le plus efficacement possible tous les incendies présents sur une carte, en prenant en compte des contraintes de déplacement, de réservoir, et de temps par action.",
+            "Dans ce projet je me suis occupé de l'architecture du projet, de la gestion des évènements et de l'affichage isométrique."
+        ],
+        "externButton":{
+            "link": "https://github.com/volanddo/Fire-Simulator",
+            "text": "Retrouver le code source sur Github"
+        },
+        "image":[
+            "images/project/robotPompier.gif"
+        ],
+        "competence":{
+            "title":"Compétences acquises :",
+            "ul":[
+                "JAVA",
+                "Programmation objet"
+            ]
+        }
+    },
+    {
+        "title": {
+            "h2":"Grenoble Eat",
+            "ul":[
+                "java",
+                "SQL",
+                "UML"
+            ]
+        },
+        "presentation":[
+            "Projet scolaire visant à mettre en place une plateforme de gestion de restaurant similaire à UberEat.",
+            "Le projet est fait en groupe de cinq.",
+            "Pour la conception, nous disposons de trois clients (restaurants, clients, livreurs).",
+            "Les clients sont codés en Java et utilisent une base de données OracleSql. Les requêtes sont envoyées à l'aide de JDBC.",
+            "Nous avons réalisé l'ensemble du projet, de la conception de la base de données en passant par des diagrammes UML à la création de l'application.",
+            "L'application est codée selon l'architecture MVC"
+        ],
+        "externButton":{
+            "link": "https://github.com/volanddo/GrenobleEat",
+            "text": "Retrouver le code source sur Github"
+        },
+        "image":[
+            ""
+        ],
+        "competence":{
+            "title":"Compétences acquises :",
+            "ul":[
+                "JAVA",
+                "JDBC",
+                "SQL",
+                "UML",
+                "Architecture MVC",
+                "Travail en équipe"
+            ]
+        }
+    },
+    {
+        "title": {
+            "h2":"Projet Conception OS",
+            "ul":[
+                "C"
+            ]
+        },
+        "presentation":[
+            "Projet scolaire où l'objectif est de créer un os.",
+            "Un système dont les interruptions sont déjà en place.",
+            "Mon rôle consiste à coder l'affichage du terminal (affichage de l'horloge et des instructions), toute la gestion des processus et des threads.",
+            "Utilisation de l'algorithme du tourniquet. Le processeur utilisé est mono-coeur."
+        ],
+        "externButton":{
+            "link": "https://github.com/volanddo/Projet-OS",
+            "text": "Retrouver le code source sur Github"
+        },
+        "image":[
+            ""
+        ],
+        "competence":{
+            "title":"Compétences acquises :",
+            "ul":[
+                "Fonctionnement OS",
+                "Perfectionnement C"
+            ]
+        }
+    },
+    {
+        "title": {
+            "h2":"Shell, Malloc, Lecteur video",
+            "ul":[
+                "C"
+            ]
+        },
+        "presentation":[
+            "Projet scolaire où l'objectif est de créer son propre shell, de refaire les fonctions free et malloc.",
+            "Le lecteur vidéo a pour but de nous introduire la programmation parallèle et les threads."
+        ],
+        "externButton":{
+            "link": "https://github.com/volanddo/Shell-malloc-video",
+            "text": "Retrouver le code source sur Github"
+        },
+        "image":[
+            ""
+        ],
+        "competence":{
+            "title":"Compétences acquises :",
+            "ul":[
+                "Fonctionnement d'un Shell",
+                "Fonctionnement Malloc",
+                "Programmation parallèle et Theads"
+            ]
+        }
+    }
+    ]
+}

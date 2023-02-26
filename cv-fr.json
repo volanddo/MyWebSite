@@ -1,0 +1,70 @@
+{
+    "cv-fr":
+   [{
+        "title": {
+            "h2":"Profile",
+            "ul":[
+                "1 rue des muriers 38180 Seyssins, France",
+                "+33 6 99 80 13 24",
+                "dorian.voland@gmail.com"
+            ]
+        },
+        "presentation":[
+            "Étudiant en informatique, motivé par les challenges ayant le goût de l'effort, je suis passionné de programmation, d'informatique et de développement. Je suis également motivé et créatif avec une forte envie d'apprendre. Je fais de mon mieux pour designer des algorithmes efficaces et intelligents.",
+            "Je suis à la recherche d'un <strong>stage en développement</strong> entre <strong>mi-mai et mi-septembre 2023</strong>"
+
+        ],
+        "competence":{
+            "titre":"Languages de programmations connus :",
+            "ul":[
+                "C",
+                "Python",
+                "Java",
+                "SQL",
+                "HTML",
+                "CSS",
+                "Assembleur",
+                "JS",
+                "PHP"
+            ]
+        }
+    },
+    {
+        "title": {
+            "h2":"Expériences",
+            "ul":[
+            ]
+        },
+        "presentation":[
+            "<em>[2022]</em> 4e au challenge Neo-vision (AI challenge)",
+            "[été 2022]</em> Vendeur à METRO",
+            "[2019]-[2022]</em> Soutien mathématique + Création site web entreprise (www.saveurstoscane.fr)",
+            "<em>[2017]-[2019]</em> Animateur en centre de loisirs"
+        ],
+        "competence":{
+            "titre":"Formations",
+            "ul":[
+                "ENSIMAG : École d'Ingénieur en Informatique et Mathématiques Appliquées",
+                "Licence 2 : Informatique et Mathématiques",
+                "Bac S: Mention Très Bien"
+            ]
+        }
+    },{
+        "title": {
+            "h2":"Hobbies",
+            "ul":[
+            ]
+        },
+        "presentation":[
+            "<strong>Nouvelles technologies et innovations:</strong> Je m'intéresse aux nouvelles technologies, aux voitures autonomes, aux drones ainsi qu'aux IA",
+            "<strong>Sport :</strong> Je suis passionné d'escalade et de ski. Je les pratique à un très bon niveau avec des amis de mon école.",
+            "<strong>La programmation :</strong> Je passe le reste de mon temps libre à développer des projets personnels et à m'entrainer sur Leetcode."
+        ],
+        "competence":{
+            "titre":"",
+            "ul":[
+            ]
+        }
+    }
+   ]
+}
