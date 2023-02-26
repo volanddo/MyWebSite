@@ -1,4 +1,4 @@
-var path = "https://volanddo.github.io/"
+const path = "https://volanddo.github.io/"
 
 function animateMenu(){
     let menuToggle = document.querySelector("header .toggle");
@@ -140,21 +140,19 @@ class Article{
     }
 }
 
-function readJson(filePath, baliseToAdd){
+function readJson(filePath, baliseToAdd, startName){
     fetch(path+filePath)
   .then(response => response.json())
   .then(data => {
-    
-    let a = new Article(data["cv-fr"].title, data["cv-fr"].presentation, data["cv-fr"].competence, data["cv-fr"].image, data["cv-fr"].externButton);
+    let a = new Article(data[startName].title, data[startName].presentation, data[startName].competence, data[startName].image, data[startName].externButton);
     baliseToAdd.appendChild(a.createArticle());
   })
   .catch(error => console.error(error));
-  
 }
 
 
 window.addEventListener('load', function() {
     animateMenu();
-    readJson('project.json', document.getElementById("MyProject"));
-    readJson('cv-fr.json', document.getElementById("MyCV"));
+    readJson('project.json', document.getElementById("MyProject"), 'project');
+    readJson('cv-fr.json', document.getElementById("MyCV"), 'cv-fr');
 });
