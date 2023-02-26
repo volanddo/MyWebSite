@@ -155,7 +155,6 @@ function readJson(filePath, baliseToAdd){
 
 window.addEventListener('load', function() {
     animateMenu();
-    readProject();
     readJson('project.json', document.getElementById("MyProject"));
     readJson('cv-fr.json', document.getElementById("MyCV"));
 });
