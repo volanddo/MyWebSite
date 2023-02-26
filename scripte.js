@@ -104,13 +104,15 @@ class Article{
         });
         //externButton
         //<p class="externButton fr"> <a href="">Fichier source non disponible (accord avec l'ENSIMAG)</a></p>
-        let p = document.createElement("p");
-        article.appendChild(p);
-        p.classList.add("externButton");
-        let a = document.createElement("a");
-        p.appendChild(a);
-        a.href = this.externButton["link"];
-        a.innerHTML = this.externButton["text"];
+        if (this.externButton != null){
+            let p = document.createElement("p");
+            article.appendChild(p);
+            p.classList.add("externButton");
+            let a = document.createElement("a");
+            p.appendChild(a);
+            a.href = this.externButton["link"];
+            a.innerHTML = this.externButton["text"];
+        }
         //image
         div = document.createElement("div");
         div.classList.add("image");
@@ -143,7 +145,7 @@ function readJson(filePath, baliseToAdd){
   .then(response => response.json())
   .then(data => {
     
-    let a = new Article(data.cv-fr.title, data.cv-fr.presentation, data.cv-fr.competence, data.cv-fr.image, data.cv-fr.externButton);
+    let a = new Article(data["cv-fr"].title, data["cv-fr"].presentation, data["cv-fr"].competence, data["cv-fr"].image, data["cv-fr"].externButton);
     baliseToAdd.appendChild(a.createArticle());
   })
   .catch(error => console.error(error));
