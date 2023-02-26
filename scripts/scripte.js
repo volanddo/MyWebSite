@@ -164,7 +164,6 @@ class Article{
         return article;
     }
 }
-
 function readJson(filePath, baliseToAdd, startName){
     fetch(currentPath+"jsonFile/"+filePath)
   .then(response => response.json())
@@ -183,4 +182,5 @@ window.addEventListener('load', function() {
     changeLanguage();
     readJson('project-fr.json', document.getElementById("MyProject"), 'project-fr');
     readJson('cv-fr.json', document.getElementById("MyCV"), 'cv-fr');
+    drawBG();
 });
