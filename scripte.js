@@ -138,20 +138,22 @@ class Article{
     }
 }
 
-function generateProject(){
-    fetch(path+'project.json')
+function readJson(filePath, baliseToAdd){
+    fetch(path+filePath)
   .then(response => response.json())
   .then(data => {
     
     let a = new Article(data.cv-fr.title, data.cv-fr.presentation, data.cv-fr.competence, data.cv-fr.image, data.cv-fr.externButton);
-    document.getElementById("MyProject").appendChild(a.createArticle());
+    baliseToAdd.appendChild(a.createArticle());
   })
   .catch(error => console.error(error));
+  
 }
 
 
 window.addEventListener('load', function() {
     animateMenu();
-    //changeLanguage();
-    generateProject();
+    readProject();
+    readJson('project.json', document.getElementById("MyProject"));
+    readJson('cv-fr.json', document.getElementById("MyCV"));
 });
