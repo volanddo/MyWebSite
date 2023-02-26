@@ -67,7 +67,7 @@ function changeLanguage(){
             }
             document.getElementById("CvButton").innerHTML="My CV"
             document.getElementById("PjButton").innerHTML="My Projects"
-            readJson('project-fr.json', projet, 'project-en');
+            readJson('project-en.json', projet, 'project-en');
             readJson('cv-en.json', cv, 'cv-en');
         }
         else{

@@ -1,0 +1,218 @@
+{
+    "project-en":
+    [
+    {
+    "title": {
+    "h2":"Java Compiler",
+    "ul":[
+    "java",
+    "junit",
+    "antlr",
+    "maven",
+    "AGILE"
+    ]
+    },
+    "presentation":[
+    "School project aiming to code a compiler for an object-oriented language close to Java. The project is done in groups of five over a one-month period. I was able to familiarize myself with assembly concepts such as stack, heap, and pointers management.",
+    "In this project, I was a scrum master and developer. My role was to coordinate the team and plan tasks according to the AGILE methodology. For the code part, I took care of the generation of assembly code and its optimizations. The optimizations allowed us to have the 5th most efficient compiler among the thirty groups.",
+    "Compilation and the addition of external libraries are done with MAVEN. Tests are automated with Junit",
+    "The following code generates the following assembly file"
+    ],
+    "externButton":{
+    "link": "",
+    "text": "Source file not available (agreement with ENSIMAG)"
+    },
+    "image":[
+    "images/project/code.png",
+    "images/project/codeAsm.png"
+    ],
+    "competence":{
+    "title":"Acquired skills:",
+    "ul":[
+    "Project management, SCRUM",
+    "Advanced JAVA",
+    "Compiler",
+    "ANTLR",
+    "MAVEN",
+    "Assembly"
+    ]
+    }
+    },
+    {
+    "title": {
+    "h2":"2D RPG: Ethynd",
+    "ul":[
+    "Python",
+    "Pygame"
+    ]
+    },
+    "presentation":[
+    "I realized this project in high school with three friends over a period of two months. It consists of a 2D RPG in the world of Ethynd. The player can move, change zones, kill enemies and take damage.",
+    "The entire game is coded with Pygame in Python. I took care of the display of the map, the animation as well as the interactions of the character with enemies."
+    ],
+    "externButton":{
+    "link": "https://github.com/ProjetIsn2019/Ethynd",
+    "text": "View source files"
+    },
+    "image":[
+    "images/project/ethynd.gif"
+    ],
+    "competence":{
+    "title":"Acquired skills:",
+    "ul":[
+    "Python",
+    "Object-Oriented Programming",
+    "Event programming"
+    ]
+    }
+    },
+    {
+        "title": {
+            "h2":"Graphics library",
+            "ul":[
+                "C"
+            ]
+        },
+        "presentation":[
+            "A graphics library entirely coded in C. It allows the creation of programs using a graphical display. Its operation is similar to Tkinter in Python. It was created in a month with a group of three students.",
+            "To work, the library allows the creation of objects such as widgets, frames, toplevels and other objects. Then position them using geometry managers (gridder, placer)."
+        ],
+        "externButton":{
+            "link": "https://github.com/volanddo/GUI-ensimag-",
+            "text": "View source files"
+        },
+        "image":[
+            "images/project/minesweeper.gif",
+            "images/project/widgets.gif"
+        ],
+        "competence":{
+            "title":"Skills acquired:",
+            "ul":[
+                "Event programming",
+                "In-depth knowledge of how a graphics library works",
+                "advanced C concept",
+                "Teamwork",
+                "Cmake and Makefile"
+            ]
+        }
+    },
+    {
+        "title": {
+            "h2":"Fire simulator",
+            "ul":[
+                "Java"
+            ]
+        },
+        "presentation":[
+            "School project whose objective is to learn and familiarize myself with Java objects (queue, stack, linkedlist....). The project was done in a group of three.",
+            "The objective of this project was to create a fire simulator, where robots had to efficiently extinguish all fires present on a map, taking into account constraints such as movement, reservoir, and time per action.",
+            "In this project, I took care of the project's architecture, event management, and isometric display."
+        ],
+        "externButton":{
+            "link": "https://github.com/volanddo/Fire-Simulator",
+            "text": "View source files"
+        },
+        "image":[
+            "images/project/robotPompier.gif"
+        ],
+        "competence":{
+            "title":"Skills acquired:",
+            "ul":[
+                "Java",
+                "Object-oriented programming"
+            ]
+        }
+    },
+    {
+        "title": {
+            "h2":"Grenoble Eat",
+            "ul":[
+                "Java",
+                "SQL",
+                "UML"
+            ]
+        },
+        "presentation":[
+            "School project aimed at setting up a restaurant management platform similar to UberEat.",
+            "The project is done in a group of five.",
+            "For the design, we have three clients (restaurants, clients, deliverymen).",
+            "The clients are coded in Java and use an OracleSql database. Queries are sent using JDBC.",
+            "We have carried out the entire project, from the database design through UML diagrams to the creation of the application.",
+            "The application is coded according to the MVC architecture"
+        ],
+        "externButton":{
+            "link": "https://github.com/volanddo/GrenobleEat",
+            "text": "View source files"
+        },
+        "image":[
+            ""
+        ],
+        "competence":{
+            "title":"Skills acquired:",
+            "ul":[
+                "Java",
+                "JDBC",
+                "SQL",
+                "UML",
+                "MVC architecture",
+                "Teamwork"
+            ]
+        }
+    },
+    {
+        "title": {
+        "h2": "OS Design Project",
+        "ul": [
+        "C"
+        ]
+        },
+        "presentation": [
+        "School project with the goal of creating an OS.",
+        "A system with interrupts already in place.",
+        "My role was to code the terminal display (display of clock and instructions), and handle process and thread management.",
+        "Using the round-robin algorithm. The processor used is single-core."
+        ],
+        "externButton": {
+        "link": "https://github.com/volanddo/Projet-OS",
+        "text": "View source files"
+        },
+        "image": [
+        ""
+        ],
+        "competence": {
+        "title": "Skills acquired:",
+        "ul": [
+        "OS functioning",
+        "C improvement"
+        ]
+        }
+        },
+        {
+        "title": {
+        "h2": "Shell, Malloc, Video Player",
+        "ul": [
+        "C"
+        ]
+        },
+        "presentation": [
+        "School project with the goal of creating own shell, and redoing the free and malloc functions.",
+        "The video player aims to introduce us to parallel programming and threads."
+        ],
+        "externButton": {
+        "link": "https://github.com/volanddo/Shell-malloc-video",
+        "text": "View source files"
+        },
+        "image": [
+        ""
+        ],
+        "competence": {
+        "title": "Skills acquired:",
+        "ul": [
+        "Shell functioning",
+        "Malloc functioning",
+        "Parallel programming and threads"
+        ]
+        }
+        }
+    ]}
+        

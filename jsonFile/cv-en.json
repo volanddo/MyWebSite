@@ -1,0 +1,73 @@
+{
+    "cv-en":
+    [
+    {
+        "title": {
+            "h2":"Profile",
+            "ul":[
+                "1 rue des muriers 38180 Seyssins, France",
+                "+33 6 99 80 13 24",
+                "dorian.voland@gmail.com"
+            ]
+        },
+        "presentation":[
+            "Computer science student, motivated by challenges with a taste for effort, I am passionate about programming, computer science, and development. I am also motivated and creative with a strong desire to learn. I do my best to design efficient and intelligent algorithms.",
+            "I am looking for an <strong>internship in development</strong> between <strong>mid-May and mid-September 2023</strong>."
+        ],
+        "externButton":null, "image": null,
+        "competence":{
+            "titre":"Known programming languages:",
+            "ul":[
+                "C",
+                "Python",
+                "Java",
+                "SQL",
+                "HTML",
+                "CSS",
+                "Assembler",
+                "JS",
+                "PHP"
+            ]
+        }
+    },{
+        "title": {
+            "h2":"Experience",
+            "ul":[
+            ]
+        },
+        "presentation":[
+            "<em>[2022]</em> 4th place in the Neo-vision challenge (AI challenge)",
+            "[summer 2022]</em> Seller at METRO",
+            "[2019]-[2022]</em> Mathematical support + Creation of a company website (www.saveurstoscane.fr)",
+            "<em>[2017]-[2019]</em> Recreation center animator"
+        ],
+        "externButton":null, "image": null,
+        "competence":{
+            "titre":"Education",
+            "ul":[
+                "ENSIMAG: School of Computer Science and Applied Mathematics",
+                "Licence 2: Computer Science and Mathematics",
+                "Bac S: Mention Très Bien (High school diploma with highest honors in science)"
+            ]
+        }
+    },{
+        "title": {
+            "h2":"Hobbies",
+            "ul":[
+            ]
+        },
+        "presentation":[
+            "<strong>New technologies and innovations:</strong> I am interested in new technologies, autonomous cars, drones, and AI.",
+            "<strong>Sport:</strong> I am passionate about climbing and skiing. I practice them at a very good level with friends from my school.",
+            "<strong>Programming:</strong> I spend the rest of my free time developing personal projects and practicing on Leetcode."
+        ],
+        "externButton":null, "image": null,
+        "competence":{
+            "titre":"",
+            "ul":[
+            ]
+        }
+    }
+    
+    ]
+}

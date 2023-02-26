@@ -16,7 +16,7 @@
         ],
         "externButton":null, "image": null,
         "competence":{
-            "titre":"Languages de programmations connus :",
+            "title":"Languages de programmations connus :",
             "ul":[
                 "C",
                 "Python",
@@ -44,7 +44,7 @@
         ],
         "externButton":null, "image": null,
         "competence":{
-            "titre":"Formations",
+            "title":"Formations",
             "ul":[
                 "ENSIMAG : École d'Ingénieur en Informatique et Mathématiques Appliquées",
                 "Licence 2 : Informatique et Mathématiques",
@@ -64,7 +64,7 @@
         ],
         "externButton":null, "image": null,
         "competence":{
-            "titre":"",
+            "title":"",
             "ul":[
             ]
         }
