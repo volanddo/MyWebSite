@@ -1,4 +1,6 @@
-const path = "https://volanddo.github.io/"
+const pathLocal = "http://localhost:8080/";
+const pathGlobal = "https://volanddo.github.io/";
+var currentPath = pathGlobal;
 
 function animateMenu(){
     let menuToggle = document.querySelector("header .toggle");
@@ -114,14 +116,16 @@ class Article{
             a.innerHTML = this.externButton["text"];
         }
         //image
-        div = document.createElement("div");
-        div.classList.add("image");
-        article.appendChild(div);
-        this.image.forEach(imagePath =>{
-            let img = document.createElement("img");
-            img.src = imagePath;
-            div.appendChild(img);
-        });
+        if (this.image != null){
+            div = document.createElement("div");
+            div.classList.add("image");
+            article.appendChild(div);
+            this.image.forEach(imagePath =>{
+                let img = document.createElement("img");
+                img.src = imagePath;
+                div.appendChild(img);
+            });
+        }
         //competence
         div = document.createElement("div");
         div.classList.add("competence");
@@ -141,11 +145,13 @@ class Article{
 }
 
 function readJson(filePath, baliseToAdd, startName){
-    fetch(path+filePath)
+    fetch(currentPath+filePath)
   .then(response => response.json())
   .then(data => {
-    let a = new Article(data[startName].title, data[startName].presentation, data[startName].competence, data[startName].image, data[startName].externButton);
-    baliseToAdd.appendChild(a.createArticle());
+    data[startName].forEach(objet =>{
+        let a = new Article(objet["title"], objet["presentation"], objet["competence"], objet["image"], objet["externButton"]);
+        baliseToAdd.appendChild(a.createArticle());
+    });
   })
   .catch(error => console.error(error));
 }
@@ -153,6 +159,6 @@ function readJson(filePath, baliseToAdd, startName){
 
 window.addEventListener('load', function() {
     animateMenu();
-    readJson('project.json', document.getElementById("MyProject"), 'project');
+    readJson('project.json', document.getElementById("MyProject"), 'project-fr');
     readJson('cv-fr.json', document.getElementById("MyCV"), 'cv-fr');
 });

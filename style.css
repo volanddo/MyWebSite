@@ -94,5 +94,7 @@ section h1{
     }
     .article .title {
         flex-direction:row;
+    }
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
