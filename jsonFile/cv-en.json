@@ -16,7 +16,7 @@
         ],
         "externButton":null, "image": null,
         "competence":{
-            "title":"Known programming languages:",
+            "title":"Programming languages:",
             "ul":[
                 "C",
                 "Python",
