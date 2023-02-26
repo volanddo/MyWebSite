@@ -16,7 +16,7 @@
         ],
         "externButton":null, "image": null,
         "competence":{
-            "titre":"Known programming languages:",
+            "title":"Known programming languages:",
             "ul":[
                 "C",
                 "Python",
@@ -43,7 +43,7 @@
         ],
         "externButton":null, "image": null,
         "competence":{
-            "titre":"Education",
+            "title":"Education",
             "ul":[
                 "ENSIMAG: School of Computer Science and Applied Mathematics",
                 "Licence 2: Computer Science and Mathematics",
@@ -63,7 +63,7 @@
         ],
         "externButton":null, "image": null,
         "competence":{
-            "titre":"",
+            "title":"",
             "ul":[
             ]
         }

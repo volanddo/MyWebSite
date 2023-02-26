@@ -59,6 +59,7 @@ function changeLanguage(){
         // make a new content
         isFrench = !isFrench;
         if (!isFrench){
+            englishButton.src= currentPath + "images/francais.webp";
             if(isProject){
                 document.getElementById("titleSection").innerHTML = "My projects";
             }
@@ -71,6 +72,7 @@ function changeLanguage(){
             readJson('cv-en.json', cv, 'cv-en');
         }
         else{
+            englishButton.src= currentPath + "images/anglais.webp";
             if(isProject){
                 document.getElementById("titleSection").innerHTML = "Mes Projets";
             }
